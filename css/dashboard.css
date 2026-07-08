@@ -1,0 +1,22 @@
+.dashboard .quick-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.quick-actions button {
+    width: 100%;
+    justify-content: flex-start;
+}
+.badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.badge-open { background: #E0E7FF; color: #4338CA; }
+.badge-bidding { background: #FEF3C7; color: #92400E; }
+.badge-assigned { background: #DBEAFE; color: #1E40AF; }
+.badge-in_progress { background: #CCFBF1; color: #0F766E; }
+.badge-completed { background: #D1FAE5; color: #065F46; }
+.badge-disputed { background: #FEE2E2; color: #991B1B; }
