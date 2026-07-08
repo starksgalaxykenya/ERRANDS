@@ -1,0 +1,41 @@
+<div class="kyc-page">
+    <div class="card">
+        <div class="card-header">
+            <h2>KYC Verification</h2>
+        </div>
+        <div id="kyc-form-container">
+            <form id="kyc-form">
+                <div class="form-group">
+                    <label>ID Type</label>
+                    <select id="kyc-id-type" required>
+                        <option value="">Select ID Type</option>
+                        <option value="national_id">National ID</option>
+                        <option value="passport">Passport</option>
+                        <option value="drivers_license">Driver's License</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>ID Number</label>
+                    <input type="text" id="kyc-id-number" required>
+                </div>
+                <div class="form-group">
+                    <label>Upload ID Front</label>
+                    <input type="file" id="kyc-front" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label>Upload ID Back</label>
+                    <input type="file" id="kyc-back" accept="image/*">
+                </div>
+                <div class="form-group">
+                    <label>Selfie with ID</label>
+                    <input type="file" id="kyc-selfie" accept="image/*" required>
+                </div>
+                <button type="submit" class="btn-primary">Submit for Verification</button>
+            </form>
+            <div id="kyc-status" style="display:none;">
+                <h3>Verification Status</h3>
+                <p id="kyc-status-text"></p>
+            </div>
+        </div>
+    </div>
+</div>
