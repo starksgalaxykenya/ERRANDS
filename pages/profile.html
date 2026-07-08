@@ -1,0 +1,40 @@
+<div class="profile-page">
+    <div class="card">
+        <div class="card-header">
+            <h2>My Profile</h2>
+        </div>
+        <div class="profile-content">
+            <div class="profile-avatar-section">
+                <img src="https://ui-avatars.com/api/?name=${window.currentUserData?.name || 'User'}&size=128" alt="Avatar" id="profile-avatar">
+                <button class="btn-outline" id="change-avatar-btn"><i class="fas fa-camera"></i> Change</button>
+            </div>
+            <form id="profile-form">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="profile-name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="profile-email" disabled>
+                </div>
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="tel" id="profile-phone" required>
+                </div>
+                <div class="form-group">
+                    <label>Bio</label>
+                    <textarea id="profile-bio" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Update Profile</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="card">
+        <h3>KYC Status</h3>
+        <div id="kyc-status-display">
+            <span class="status-badge" id="kyc-badge">Not Verified</span>
+        </div>
+        <button class="btn-outline" data-page="kyc">Manage KYC</button>
+    </div>
+</div>
