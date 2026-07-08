@@ -1,0 +1,34 @@
+<header class="app-header">
+    <div class="header-content">
+        <div class="logo">
+            <i class="fas fa-running"></i>
+            <span>ERRANDS</span>
+        </div>
+        
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#" data-page="dashboard" class="active"><i class="fas fa-th-large"></i> Dashboard</a></li>
+                <li><a href="#" data-page="create-errand"><i class="fas fa-plus-circle"></i> New Errand</a></li>
+                <li><a href="#" data-page="browse-errands"><i class="fas fa-search"></i> Browse</a></li>
+                <li><a href="#" data-page="my-errands"><i class="fas fa-list"></i> My Errands</a></li>
+                <li><a href="#" data-page="chat"><i class="fas fa-comments"></i> Chat</a></li>
+            </ul>
+        </nav>
+        
+        <div class="user-menu">
+            <div class="notification-bell" id="notification-bell">
+                <i class="fas fa-bell"></i>
+                <span class="notification-badge" id="notification-count" style="display:none">0</span>
+            </div>
+            <div class="user-avatar" id="user-avatar">
+                <img src="https://ui-avatars.com/api/?name=${window.currentUserData?.name || 'User'}&background=4F46E5&color=fff" alt="User">
+            </div>
+            <div class="dropdown-menu" id="user-dropdown" style="display:none;">
+                <a href="#" data-page="profile"><i class="fas fa-user"></i> Profile</a>
+                <a href="#" data-page="kyc"><i class="fas fa-id-card"></i> KYC</a>
+                <a href="#" data-page="payments"><i class="fas fa-wallet"></i> Payments</a>
+                <a href="#" id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </div>
+        </div>
+    </div>
+</header>
